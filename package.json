@@ -2,6 +2,7 @@
   "name": "plumetonpote",
   "version": "1.0.0",
   "description": "League account manager desktop app",
+  "bin": "main.js",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

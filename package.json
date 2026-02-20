@@ -1,5 +1,5 @@
 {
-  "name": "plumetonpote",
+  "name": "leagueaccmanager",
   "version": "1.0.0",
   "description": "League account manager desktop app",
   "bin": "main.js",

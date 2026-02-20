@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rift Vault - Account Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-layer bg-a"></div>
+    <div class="bg-layer bg-b"></div>
+    <div class="bg-layer bg-forest"></div>
+    <div class="bg-layer bg-nebula"></div>
+    <div class="bg-layer bg-vignette"></div>
+    <div class="mountain mountain-1"></div>
+    <div class="mountain mountain-2"></div>
+    <div class="mist mist-1"></div>
+    <div class="mist mist-2"></div>
+    <div class="branch branch-left"></div>
+    <div class="branch branch-right"></div>
+    <div class="rune rune-1"></div>
+    <div class="rune rune-2"></div>
+    <div class="spark spark-1"></div>
+    <div class="spark spark-2"></div>
+    <div class="spark spark-3"></div>
+    <div class="leaf leaf-1"></div>
+    <div class="leaf leaf-2"></div>
+    <div class="leaf leaf-3"></div>
+    <div class="leaf leaf-4"></div>
+    <div class="leaf leaf-5"></div>
+    <div class="firefly firefly-1"></div>
+    <div class="firefly firefly-2"></div>
+    <div class="firefly firefly-3"></div>
+    <div class="firefly firefly-4"></div>
+    <div class="firefly firefly-5"></div>
+
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>Rift Vault</h1>
+          <p>League of Legends account manager</p>
+        </div>
+        <div class="top-actions">
+          <button id="sync-rank-btn" class="btn btn-alt">Sync Riot Rank</button>
+          <button id="import-pdf-btn" class="btn btn-alt">Import PDF</button>
+          <button id="save-btn" class="btn">Save</button>
+        </div>
+      </header>
+
+      <section class="form-panel">
+        <h2>Add account</h2>
+        <form id="add-form">
+          <div class="grid">
+            <label>
+              Login *
+              <input id="login" required placeholder="Required" />
+            </label>
+            <label>
+              Password *
+              <input id="password" required placeholder="Required" />
+            </label>
+            <label>
+              Nickname *
+              <input id="nickname" required placeholder="Example#EUW" />
+            </label>
+            <label>
+              Email
+              <input id="email" placeholder="Optional" />
+            </label>
+            <label>
+              Status
+              <input id="status" placeholder="Optional" />
+            </label>
+            <label>
+              OP.GG
+              <input id="opgg" placeholder="Auto-generated if empty" />
+            </label>
+          </div>
+          <label>
+            Commentary
+            <textarea id="commentary" rows="2" placeholder="Optional"></textarea>
+          </label>
+          <button type="submit" class="btn">Add account</button>
+        </form>
+      </section>
+
+      <section>
+        <div class="accounts-head">
+          <h2>Accounts</h2>
+          <div class="accounts-tools">
+            <span id="count">0</span>
+            <button id="export-selected-btn" class="btn btn-alt" type="button">Export selected PNG</button>
+            <button id="remove-all-btn" class="btn btn-danger" type="button">Remove all</button>
+          </div>
+        </div>
+        <div id="cards" class="cards"></div>
+      </section>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+  </html>

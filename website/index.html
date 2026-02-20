@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rift Vault — Install</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="theme-color" content="#101b34" />
+  </head>
+  <body>
+    <div class="bg-glow"></div>
+    <main class="hero">
+      <header class="hero-head">
+        <h1>Rift Vault</h1>
+        <p class="tag">The premium League account vault, from browser to desktop in one click.</p>
+      </header>
+
+      <div class="hero-inner">
+        <section class="hero-left">
+          <div class="status-pills">
+            <span class="pill" id="api-health">API: checking...</span>
+            <span class="pill" id="windows-status">Windows package: checking...</span>
+          </div>
+
+          <div class="cta-grid">
+            <button class="btn primary" id="launch-app-btn" type="button">Launch App</button>
+            <a class="btn" id="download-windows-btn" href="/api/download/windows">Download for Windows</a>
+            <button id="install-btn" class="btn alt" hidden type="button">Add to desktop</button>
+          </div>
+
+          <p id="download-note" class="notes">
+            If the desktop app is already installed, <b>Launch App</b> tries to open it directly. If not installed yet, download the Windows installer to get a desktop icon.
+          </p>
+
+          <div class="links-row">
+            <a class="text-link" id="dl-github" href="#" target="_blank" rel="noreferrer">GitHub Releases</a>
+            <a class="text-link" id="dl-itch" href="#" target="_blank" rel="noreferrer">itch.io</a>
+          </div>
+        </section>
+
+        <section class="hero-right">
+          <div class="card-mock">
+            <div class="card-top">
+              <div class="card-num">#0001</div>
+              <div class="nickname">Summoner#EUW</div>
+            </div>
+            <div class="card-body">
+              <div class="rank">MASTER 172 LP</div>
+              <div class="history">5 games history • Riot synced • PNG export ready</div>
+            </div>
+          </div>
+          <div class="glass-tip">
+            <div class="tip-title">Desktop-first flow</div>
+            <div class="tip-copy">Browser page handles install/discovery. The Electron app handles sync, secure storage, and exports.</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

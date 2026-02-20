@@ -1,0 +1,21 @@
+{
+  "name": "plumetonpote",
+  "version": "1.0.0",
+  "description": "League account manager desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "web": "node website/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "electron": "^40.6.0",
+    "express": "^4.21.2",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^5.4.624"
+  }
+}
